@@ -7,7 +7,7 @@ Transform your RPi into a very simple connected thermostat
 ## Install
 
 ### Server
-You need to set up a VPS server for the thermostat interface. Simply put the files from the `server` folder on your vps, install the dependencies `npm i`, then run `server.js`. I recommend you to use [forever](https://github.com/foreverjs/forever) to keep your script running.
+You need to set up a VPS for the thermostat interface. Simply put the files from the `server` folder on your vps, install the dependencies `npm i`, then run `server.js`. I recommend you to use [forever](https://github.com/foreverjs/forever) to keep your script running.
 
 
 ### Raspberry Pi
@@ -23,7 +23,6 @@ And voilà ! You can access the web interface on the port 1999 from your VPS IP 
 ### Future
 
 This is actually the strict minimum for a connected thermostat, There is so many possible features to develop :
-- The slider range's default value on the web interface must be the current setting
 - Increase the temperature just before wake-up time
 - Turn the radiator on and off according to the position of the person (by using ifttt)
 - Add a temperature sensor to adjust the setting for a desired temperature setting

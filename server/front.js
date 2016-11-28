@@ -4,6 +4,10 @@ var slider = document.getElementById("slider");
 var lastChangeTime = 0;
 var fallbackTimeout;
 
+socket.on('init', function(data) {
+    slider.value = data.setting;
+});
+
 function emitChange(value) {
     socket.emit('change', parseInt(value));
 }
